@@ -1,0 +1,41 @@
+<div class="body">
+  <h1>Search Concert</h1>
+  <div class="form">
+    <input type="text" placeholder="Artist" label='Artist' [(ngModel)]="artistName"/>
+    <input type="text" placeholder="City" label='City' [(ngModel)]="cityName"/>
+    <button (click)="search()">Look for</button>    
+  </div>
+
+  <div *ngIf="res.length>=1;else message">
+    <div id="result">
+      <div class="info" *ngFor="let rest of res; let i = index" >
+        <h3 (click)="handleClick(i)">{{rest.concert}}</h3>
+        <div class="hidden" id={{i}}>
+            <p><b>Artist:</b> {{rest.artist}}</p>
+            <p><b>City:</b> {{rest.city}}</p>  
+            <img src={{rest.image}}/>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+  <ng-template #message>
+    <p id="message-error-empty" *ngIf="index!=0">Not found</p>
+  </ng-template>
+  
+  <div class="message">
+    <p id="message-error-empty"></p>
+  </div>
+  
+
+  <!-- SI TENEMOS UNA API -->
+  <!-- <app-concerts [concert]="concert" *ngFor="let concert of concerts">
+    <h3 (click)="handleClick(i)">{{concert.concert}}</h3>
+    <div class="hidden" id={{i}}>
+        <p><b>Artist:</b> {{concert.artist}}</p>
+        <p><b>City:</b> {{concert.city}}</p>  
+        <img src={{concert.image}}/>
+    </div>
+  </app-concerts> -->
+
+</div>
