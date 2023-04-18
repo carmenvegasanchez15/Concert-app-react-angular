@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+  background-color: rgb(253, 238, 209);
+  font-family: 'Montserrat';
+}
+
+h1{
+  text-align: center;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+input{
+  width: 95%;
+  height: 50px;
+  border: 0;
+  margin: 10px 0px;
+  font-family: 'Montserrat';
+  font-size: 1em;
+}
+
+button{
+  border: 0;
+  border-radius: 10%;
+  background-color: rgb(248, 201, 115);
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-size: 1.1em;
+}
+
+.hidden{
+  display: none;
+}
+
+.show{
+  display: block;
+  margin-left: 50px;
+}
+
+.name-concert{
+  cursor: pointer;
+}
+
+.info{
+  margin-left: 20px;
+}
+
+#message-error-empty{
+  text-align: center;
+  color: rgba(179, 3, 3, 0.589);
+  font-weight: 700;
+}
+
+img{
+  width: 80%;
+  height: auto;
+}
+
+@media (min-width: 1000px) {
+  input{
+    width: 45%;
+    margin: 0px 20px;
+  }
+
+  button{
+    margin-top: 30px;
+    width: 160px;
+  }
+
+  img{
+    max-width: 700px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info{
+    margin-left: 50px;
+    font-size: 1.3em;
+  }
+}
