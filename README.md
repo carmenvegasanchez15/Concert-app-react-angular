@@ -2,5 +2,8 @@
 
 <h2>¿Por qué hay dos aplicaciones?</h2>
 
-Hay dos aplicaciones porque el lenguaje con el mejor me sabia manejar era con React, pero me documenté bien y he podido hacer la aplicacion con Angular tambien.
+He realizado dos proyectos: 
+  - Uno donde utilicé el lenguaje React el cual domino mejor. 
+  - Otro donde utilicé el lenguaje Angular que es el que se me pidió pero era un lenguaje que no conocía tan bien. 
+Sin embargo, gracias a una adecuada documentación, logré realizar el proyecto utilizando el lenguaje solicitado.
  
